@@ -54,9 +54,10 @@ nav a {
 /* Header Related Styles */
 .header {
   background-color: #eee4dd;
-  background-image: url("../images/header_bg.png");
+  background-image: url("../images/header_bg.png"),
+    url("../images/developer.png");
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: bottom right, top left;
 }
 .banner {
   padding: 30px 30px 0px 150px;
@@ -120,15 +121,15 @@ main {
   gap: 24px;
 }
 .skill {
-    padding: 30px;
+  padding: 30px;
   width: 267px;
   height: 377px;
   border-radius: 5px;
   background: rgb(187, 187, 187);
   box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
 }
-.skill>img{
-    padding-bottom: 30px;
+.skill > img {
+  padding-bottom: 30px;
 }
 /* Resume Section Styles */
 .resume-column-title {
@@ -187,4 +188,11 @@ textarea {
   border: 0px;
   width: 100%;
 }
-.contact input;
+@media screen and (max-width: 576px) {
+  .skills-container {
+    flex-direction: column-reverse;
+  }
+  #what-i-do-description {
+    padding: 20px;
+  }
+}
